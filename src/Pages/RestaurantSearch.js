@@ -8,7 +8,7 @@ class RestaurantSearch extends React.Component {
         return(
             <React.Fragment>
                 <Header />
-                <Navbar />
+                <Navbar tab={2}/>
                 <h1 id="title">Search page</h1>
             </React.Fragment>
         );

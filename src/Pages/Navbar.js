@@ -12,11 +12,11 @@ class Navbar extends React.Component {
                 <img id="logo" src={Logo} alt="Logo"/>
                 </div>
                 <ul>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#RestauranSearch">Search</a></li>
-                    <li><a href="#RestaurantSearch/1">Empty 1</a></li>
-                    <li><a href="#RestaurantSearch/2">Empty 2</a></li>
-                    <li><a href="#RestaurantSearch/3">Empty 3</a></li>
+                    <li><a class={this.props.tab===1?"active":null} href="/">Home</a></li>
+                    <li><a class={this.props.tab===2?"active":null} href="/search">Search</a></li>
+                    <li><a class={this.props.tab===3?"active":null} href="/search/1">Empty 1</a></li>
+                    <li><a class={this.props.tab===4?"active":null} href="/search/2">Empty 2</a></li>
+                    <li><a class={this.props.tab===5?"active":null} href="/search/3">Empty 3</a></li>
                 </ul>
             </div>
         );

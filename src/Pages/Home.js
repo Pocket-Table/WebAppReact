@@ -8,7 +8,7 @@ class Home extends React.Component {
         return (
             <React.Fragment>
                 <Header />
-                <Navbar />
+                <Navbar tab={1}/>
                 <h1 id="title">Home page</h1>
             </React.Fragment>
         );
