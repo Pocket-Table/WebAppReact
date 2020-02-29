@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Header from './Header';
+import Navbar from '../Components/Navbar';
+import Header from '../Components/Header';
 
 class SearchItem extends React.Component {
     render() {

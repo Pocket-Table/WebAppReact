@@ -5,6 +5,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import RestaurantSearch from './Pages/RestaurantSearch';
 import Home from './Pages/Home';
+import Login from './Pages/Login';
 import SearchItem from './Pages/SearchItem';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
 
 <Switch>
 <Route exact path="/" component={Home} />
+<Route path="/login" component={Login} /> 
 <Route path="/search/:id" component={SearchItem} /> 
 <Route path="/search" component={RestaurantSearch} /> 
 </Switch>

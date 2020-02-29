@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Static/Home.css';
-import Navbar from './Navbar';
-import Header from './Header';
+import Navbar from '../Components/Navbar';
+import Header from '../Components/Header';
 
 class Home extends React.Component {
     render() {

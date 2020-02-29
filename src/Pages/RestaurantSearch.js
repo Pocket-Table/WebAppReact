@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Static/RestaurantSearch.css';
-import Navbar from './Navbar';
-import Header from './Header';
+import Navbar from '../Components/Navbar';
+import Header from '../Components/Header';
 
 class RestaurantSearch extends React.Component {
     render(){

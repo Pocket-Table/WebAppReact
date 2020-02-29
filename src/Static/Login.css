@@ -1,0 +1,115 @@
+#divLogin {
+    width:100%;
+    height:100%;
+    margin-top: 0;
+    padding-top: 4%;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #2bae66, #fcf6f5);
+}
+#divForm {
+    display: grid;
+    width: 70%;
+    margin-left:15%;
+    grid-template-columns: 50% 50%;
+    background-color: #8bcda9;
+    border-style: outset;
+    border-color: #262626;
+    border-width:  2px;
+    border-radius: 5px;
+}
+
+#divLogoForm {
+    background-color: #8bcda9;
+    margin: 15%;
+}
+
+#logoForm {
+    width:80%;
+    height:80%;
+
+}
+
+#divFormInfo {
+    background-color: #8bcda9;;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+#loginText {
+    text-align: center;
+    font-size:calc(15px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Vollkorn';
+    text-decoration: underline;
+}
+
+.labelInput {
+    font-family: 'Vollkorn';
+    font-size:calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.divInput {
+    border-style: outset;
+    border-width: 2px;
+    border-color: #262626;
+    background-color: #2bae66;
+    width:80%;
+    padding-left:1%;
+    border-radius:5px;
+}
+
+.input{
+    font-family: 'Playfair Display';
+    padding-left:2%;
+    border-style: outset;
+    border-width: 2px;
+    border-color: #262626;
+    margin:1%;
+    width:70%;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#loginButton:hover {
+    background-color: #37d45e;
+    cursor: pointer;
+}
+
+.icon{
+    color:red;
+    width:7%;
+    height:6%;
+    vertical-align: middle;
+    margin-bottom: 1%;
+}
+
+#loginButton{
+    transition: 1s;
+    border-style: outset;
+    border-width: 2px;
+    border-color: #262626;
+    background-color: #2bae66;
+    width:30%;
+    margin-left:35%;
+    height:50%;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size:calc(13px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Vollkorn';
+}
+
+#link:hover {
+    cursor: pointer;
+}
+
+#link{
+    display: block;
+    text-align: center;
+    opacity: 0.8;
+    color:#262626;
+    font-family: 'Vollkorn';
+    font-size:calc(8px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}

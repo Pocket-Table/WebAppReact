@@ -6,7 +6,7 @@ class Header extends React.Component {
         return (
             <header>
                 <link rel="icon" href={Logo}></link>
-                <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet" /> 
+                <link href="https://fonts.googleapis.com/css?family=Muli|Playfair+Display|Vollkorn&display=swap" rel="stylesheet"/>  
             </header>
         );
     }
