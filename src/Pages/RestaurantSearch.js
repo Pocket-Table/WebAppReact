@@ -23,14 +23,13 @@ class RestaurantSearch extends React.Component {
         console.log("Este "+jwt);
         axios.get('http://localhost:8080/getItems',{headers:{'Authorization':'Bearer '+jwt}}).then(
             (res) => {
-                console.log("Res este "+res);
-                localStorage.removeItem('jwt-auth');
                 this.setState({
                     list:res.data
                 });
             }
         ).catch( (err) => {
             console.log(err);
+            localStorage.removeItem('jwt-auth');
             this.props.history.push("/Login");
         });
 
