@@ -6,14 +6,32 @@ import Logo from '../Static/Photos/logo.png';
 import UserIcon from '../Static/Photos/user_icon.png';
 import PassIcon from '../Static/Photos/pass_icon.png';
 import {Link} from "react-router-dom";
+import axios from 'axios';
 
 class Login extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-           info : "ZoicanDenis"
+           username:"",
+           password:""
         };
       }
+
+    submit(e){
+        console.log(" - "+this.state.username+" - "+this.state.password);
+        e.preventDefault();
+        axios.post('http://localhost:8080/authenticate',
+        {
+            username:this.state.username,
+            password:this.state.password
+        }).then((res)=>localStorage.setItem('jwt-auth',res.data.jwt));
+    }
+
+    change(e){
+        this.setState({
+            [e.target.name]:e.target.value
+        });
+    }
 
     render(){
         return(
@@ -31,7 +49,7 @@ class Login extends React.Component{
                             <label class="labelInput">Username</label> <br/>
                             <div class="divInput">
                             <img src={UserIcon} class="icon" alt="User"/>
-                            <input class="input" type="text"/>
+                            <input class="input" name="username" type="text" onChange={e => this.change(e)} />
                             </div>
                         </div>
 
@@ -39,13 +57,13 @@ class Login extends React.Component{
                             <label class="labelInput">Password</label> <br/>
                             <div class="divInput">
                             <img src={PassIcon} class="icon" alt="Pass"/>
-                            <input class="input" type="password"/>
+                            <input class="input" name="password" type="password" onChange={e => this.change(e)}/>
                             </div>
                         </div>
 
                         <div>
-                            <input type="button" value="Login" id="loginButton"/><br/>
-                            <Link style={{ textDecoration: 'none' }}><label id="link">Create an account</label> </Link>
+                            <input type="button" onClick={e => this.submit(e)} value="Login" id="loginButton"/><br/>
+                            <Link to="\test" style={{ textDecoration: 'none' }}><label id="link">Create an account</label> </Link>
                         </div>                        
                     </div>
                 </div>
