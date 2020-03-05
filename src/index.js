@@ -7,6 +7,7 @@ import RestaurantSearch from './Pages/RestaurantSearch';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import SearchItem from './Pages/SearchItem';
+import Haus from './Pages/Haus';
 
 ReactDOM.render(
 <React.Fragment>
@@ -17,6 +18,7 @@ ReactDOM.render(
 <Route path="/login" component={Login} /> 
 <Route path="/search/:id" component={SearchItem} /> 
 <Route path="/search" component={RestaurantSearch} /> 
+<Route path="/haus" component={Haus}/>
 </Switch>
 
 </BrowserRouter>
