@@ -27,6 +27,7 @@ class RestaurantSearch extends React.Component {
                     list:res.data
                 });
             }
+            
         ).catch( (err) => {
             console.log(err);
             localStorage.removeItem('jwt-auth');
