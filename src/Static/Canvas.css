@@ -1,0 +1,7 @@
+#mainDivCanvas {
+    border-width: 3px;
+    width:400px;
+    height:400px;
+    border-color: black;
+    border-style:outset;
+}

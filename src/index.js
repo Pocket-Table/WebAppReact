@@ -6,7 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import RestaurantSearch from './Pages/RestaurantSearch';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
-import Canvas from './Pages/Canvas';
+import SelectTable from './Pages/SelectTable';
+import Restaurant from './Pages/Restaurant';
 import SearchItem from './Pages/SearchItem';
 
 ReactDOM.render(
@@ -18,7 +19,8 @@ ReactDOM.render(
 <Route path="/login" component={Login} /> 
 <Route path="/search/:id" component={SearchItem} /> 
 <Route path="/search" component={RestaurantSearch} />
-<Route path="/canvas" component={Canvas} />  
+<Route path="/canvas" component={SelectTable} />  
+<Route path="/restaurant" component={Restaurant} /> 
 
 </Switch>
 
