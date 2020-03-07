@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {useStrictMode, Stage, Layer, Circle } from "react-konva";
+import {Stage, Layer, Circle } from "react-konva";
 import '../Static/Canvas.css';
 
 
@@ -81,7 +81,7 @@ export default class Canvas extends Component {
     const newScale = e.evt.deltaY > 0 ? oldScale * scaleBy : oldScale / scaleBy;
 
     console.log(newScale);
-    if(newScale >1 || newScale < 0.5) {
+    if(newScale >1 || newScale < -1) {
       return;
     }
     this.setState({
