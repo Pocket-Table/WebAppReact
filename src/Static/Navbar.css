@@ -9,7 +9,7 @@ ul {
     background-color: #333;
     grid-template-columns: 10% 90%;
     -ms-grid-column-align: center;
-    height:3.5rem;
+    height:6.5rem;
     width:100%;
    
   }
@@ -17,13 +17,13 @@ ul {
   li {
     float: left;
     font-family: 'Allerta Stencil';
-    font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
     transition: 1s;
     width:15%;
     padding-right: 1%;
     padding-left:1%;
-    height:3.5rem;
+    height:6.5rem;
   }
   
   #divLogo {
@@ -40,7 +40,7 @@ ul {
     display: block;
     color: #fcf6f5;
     text-align: center;
-    margin-top:1rem;
+    margin-top:2rem;
     text-decoration: none;
     transition: 1s;
   }
@@ -58,5 +58,5 @@ ul {
   li a:hover {
     color:#2BAE66FF;
     text-decoration: none;
-    font-size: calc(11px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(22px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   }

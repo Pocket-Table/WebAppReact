@@ -98,7 +98,6 @@ body{
 #loginButton{
     transition: 1s;
     border-style: outset;
-    border-width: 2px;
     border-color: #262626;
     background-color: #2bae66;
     width:30%;
